@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Job | AI Scam Detector</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      :root {
+        --primary-color: #3b82f6;
+      }
+      .bg-primary {
+        background-color: var(--primary-color);
+      }
+      .text-primary {
+        color: var(--primary-color);
+      }
+      .focus\:ring-primary:focus {
+        --tw-ring-color: var(--primary-color);
+      }
+      .hover\:bg-primary-dark:hover {
+        background-color: #2563eb;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+      .animate-pulse {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+    </style>
+  </head>
+
+  <body class="min-h-screen bg-gray-50">
+    <div class="container mx-auto px-4 py-16">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">
+          AI-Powered Job Scam Detection
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Submit your job posting for real-time fraud analysis and protect your
+          candidates from potential scams
+        </p>
+      </div>
+
+      <!-- Progress Steps -->
+      <div class="flex justify-center mb-12">
+        <div class="flex items-center">
+          <div class="flex items-center relative">
+            <div
+              class="rounded-full transition duration-500 ease-in-out h-12 w-12 py-3 border-2 bg-primary border-primary"
+            >
+              <svg
+                class="w-6 h-6 mx-auto text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="absolute top-0 -ml-10 text-center mt-16 w-32 text-xs font-medium text-primary"
+            >
+              Basic Information
+            </div>
+          </div>
+          <div
+            class="flex-auto border-t-2 transition duration-500 ease-in-out border-primary"
+          ></div>
+          <div class="flex items-center relative">
+            <div
+              class="rounded-full transition duration-500 ease-in-out h-12 w-12 py-3 border-2 border-primary"
+            >
+              <svg
+                class="w-6 h-6 mx-auto text-primary"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="absolute top-0 -ml-10 text-center mt-16 w-32 text-xs font-medium text-gray-500"
+            >
+              Detailed Information
+            </div>
+          </div>
+          <div
+            class="flex-auto border-t-2 transition duration-500 ease-in-out border-gray-300"
+          ></div>
+          <div class="flex items-center relative">
+            <div
+              class="rounded-full transition duration-500 ease-in-out h-12 w-12 py-3 border-2 border-gray-300"
+            >
+              <svg
+                class="w-6 h-6 mx-auto text-gray-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="absolute top-0 -ml-10 text-center mt-16 w-32 text-xs font-medium text-gray-500"
+            >
+              Analysis Results
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <!-- Basic Information Card -->
+        <div
+          class="bg-white rounded-xl p-8 shadow-lg border border-blue-50 transform transition duration-500 hover:scale-105"
+        >
+          <div class="text-center mb-8">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">
+              Basic Information
+            </h2>
+            <p class="text-sm text-gray-600">
+              Start with the essential details about the job posting
+            </p>
+          </div>
+
+          <form id="jobPostingForm">
+            <div class="space-y-6">
+              <div>
+                <label
+                  for="title"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Job Title
+                </label>
+                <input
+                  type="text"
+                  id="title"
+                  class="w-full rounded-lg border border-gray-200 py-2.5 px-4 text-sm focus:ring-2 focus:ring-primary focus:border-transparent"
+                  placeholder="e.g. Senior Software Engineer"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="function"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Function/Department
+                </label>
+                <input
+                  type="text"
+                  id="function"
+                  class="w-full rounded-lg border border-gray-200 py-2.5 px-4 text-sm focus:ring-2 focus:ring-primary focus:border-transparent"
+                  placeholder="e.g. Engineering"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="type_of_position"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Type of Position
+                </label>
+                <select
+                  id="type_of_position"
+                  class="w-full rounded-lg border border-gray-200 py-2.5 px-4 text-sm focus:ring-2 focus:ring-primary focus:border-transparent"
+                  required
+                >
+                  <option value="">Select position type</option>
+                  <option value="full-time">Full Time</option>
+                  <option value="part-time">Part Time</option>
+                  <option value="contract">Contract</option>
+                  <option value="internship">Internship</option>
+                </select>
+              </div>
+              <div>
+                <label
+                  for="type_of_contract"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Type of Contract
+                </label>
+                <select
+                  id="type_of_contract"
+                  class="w-full rounded-lg border border-gray-200 py-2.5 px-4 text-sm focus:ring-2 focus:ring-primary focus:border-transparent"
+                  required
+                >
+                  <option value="">Select contract type</option>
+                  <option value="permanent">Permanent</option>
+                  <option value="fixed-term">Fixed Term</option>
+                  <option value="temporary">Temporary</option>
+                </select>
+              </div>
+              <div>
+                <label
+                  for="required_education"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Required Education
+                </label>
+                <input
+                  type="text"
+                  id="required_education"
+                  class="w-full rounded-lg border border-gray-200 py-2.5 px-4 text-sm focus:ring-2 focus:ring-primary focus:border-transparent"
+                  placeholder="e.g. Bachelor's degree in Computer Science"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="nature_of_company"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Nature of Company
+                </label>
+                <input
+                  type="text"
+                  id="nature_of_company"
+                  class="w-full rounded-lg border border-gray-200 py-2.5 px-4 text-sm focus:ring-2 focus:ring-primary focus:border-transparent"
+                  placeholder="e.g. Technology, Finance, Healthcare"
+                  required
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Detailed Information Card -->
+        <div
+          class="bg-white rounded-xl p-8 shadow-lg border border-blue-50 transform transition duration-500 hover:scale-105"
+        >
+          <div class="text-center mb-8">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">
+              Detailed Information
+            </h2>
+            <p class="text-sm text-gray-600">
+              Provide comprehensive details about the role and company
+            </p>
+          </div>
+
+          <div class="space-y-6">
+            <div>
+              <label
+                for="description"
+                class="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Job Description
+              </label>
+              <textarea
+                id="description"
+                rows="6"
+                class="w-full rounded-lg border border-gray-200 py-2.5 px-4 text-sm focus:ring-2 focus:ring-primary focus:border-transparent"
+                placeholder="Detailed description of the role and responsibilities"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <label
+                for="requirements"
+                class="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Requirements
+              </label>
+              <textarea
+                id="requirements"
+                rows="6"
+                class="w-full rounded-lg border border-gray-200 py-2.5 px-4 text-sm focus:ring-2 focus:ring-primary focus:border-transparent"
+                placeholder="List of required skills and qualifications"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <label
+                for="benefits"
+                class="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Benefits
+              </label>
+              <textarea
+                id="benefits"
+                rows="6"
+                class="w-full rounded-lg border border-gray-200 py-2.5 px-4 text-sm focus:ring-2 focus:ring-primary focus:border-transparent"
+                placeholder="List of benefits and perks"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <label
+                for="company_profile"
+                class="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Company Profile
+              </label>
+              <textarea
+                id="company_profile"
+                rows="6"
+                class="w-full rounded-lg border border-gray-200 py-2.5 px-4 text-sm focus:ring-2 focus:ring-primary focus:border-transparent"
+                placeholder="Description of the company"
+                required
+              ></textarea>
+            </div>
+
+            <div class="flex items-start">
+              <div class="flex items-center h-5">
+                <input
+                  id="terms"
+                  type="checkbox"
+                  class="w-4 h-4 border border-gray-200 rounded focus:ring-2 focus:ring-primary"
+                  required
+                />
+              </div>
+              <label for="terms" class="ml-2 text-sm text-gray-600">
+                I agree with the
+                <a
+                  href="#"
+                  class="text-primary hover:text-blue-700 font-medium"
+                >
+                  terms and conditions
+                </a>
+              </label>
+            </div>
+
+            <div class="text-center">
+              <button
+                type="submit"
+                form="jobPostingForm"
+                class="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-sm font-medium text-white hover:bg-blue-700 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+              >
+                <svg
+                  class="w-4 h-4 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                  ></path>
+                </svg>
+                Submit Job Posting
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Analysis Card -->
+        <div
+          class="bg-white rounded-xl p-8 shadow-lg border border-blue-50 transform transition duration-500 hover:scale-105"
+        >
+          <div class="text-center mb-8">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">
+              Analysis Results
+            </h2>
+            <p class="text-sm text-gray-600">
+              Real-time fraud detection and risk assessment
+            </p>
+          </div>
+
+          <!-- Progress Section -->
+          <div class="mb-8">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-sm font-medium text-gray-700"
+                >Analysis Progress</span
+              >
+              <span class="text-sm font-medium text-primary">75%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+              <div
+                class="bg-primary h-2.5 rounded-full animate-pulse"
+                style="width: 75%"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Fraud Probability -->
+          <div class="mb-8">
+            <h4 class="text-lg font-medium text-red-600 mb-2">
+              High Risk of Fraud
+            </h4>
+            <div class="flex items-center space-x-2">
+              <div class="text-3xl font-bold text-red-600">89%</div>
+              <div class="text-sm text-gray-600">
+                probability of being fraudulent
+              </div>
+            </div>
+          </div>
+
+          <!-- Risk Factors -->
+          <div class="mb-8">
+            <h4 class="text-sm font-medium text-gray-700 mb-3">
+              Risk Factors Detected
+            </h4>
+            <div class="space-y-3">
+              <div class="flex items-start space-x-3">
+                <svg
+                  class="w-5 h-5 text-red-500 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                  ></path>
+                </svg>
+                <div>
+                  <div class="text-sm font-medium text-gray-900">
+                    Suspicious Payment Terms
+                  </div>
+                  <p class="text-sm text-gray-600">
+                    Unusual payment methods or unrealistic salary ranges
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg
+                  class="w-5 h-5 text-red-500 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                  ></path>
+                </svg>
+                <div>
+                  <div class="text-sm font-medium text-gray-900">
+                    Unverified Company
+                  </div>
+                  <p class="text-sm text-gray-600">
+                    Company details don't match official records
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg
+                  class="w-5 h-5 text-red-500 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                  ></path>
+                </svg>
+                <div>
+                  <div class="text-sm font-medium text-gray-900">
+                    Suspicious Contact Pattern
+                  </div>
+                  <p class="text-sm text-gray-600">
+                    Personal email used for business communication
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recommendations -->
+          <div class="bg-blue-50 rounded-lg p-4">
+            <h4 class="text-sm font-medium text-primary mb-2">
+              Recommendations
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-2">
+              <li class="flex items-center">
+                <svg
+                  class="w-4 h-4 text-primary mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                Verify company through official channels
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="w-4 h-4 text-primary mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                Request official company email communication
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="w-4 h-4 text-primary mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                Ask for detailed job contract before proceeding
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
